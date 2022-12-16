@@ -18,6 +18,17 @@
     border-radius: 15px;
 }
 
+a {
+    font-size: 150%;
+    padding-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited, a:link, a:active {
+    color: #cfb58a;
+    text-decoration: none;
+}
+
 body {
     background-color: #1d2021;
     color: #cfb58a;
@@ -88,6 +99,11 @@ body {
 
 .bullet-list {
     max-width: 50%;
+}
+
+.full {
+    width: 100%!important;
+    display: inline-block;
 }
 
 .spacer {
