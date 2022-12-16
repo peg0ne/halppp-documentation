@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>H++ Documentation | Option</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="img/favicon.png">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
+        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
+        <div class="nav-element-root">
+            <h1 class="nav-item nav-element">Blog</h1>
+            <h1 class="nav-item nav-element" onclick="window.location.href='documentation.html'">Documentation</h1>
+            <h1 class="nav-item nav-element">Features</h1>
+            <h1 class="nav-item nav-element">Download</h1>
+        </div>
+    </div>
+    <div class="main-view">
+        <h1 class="expressive">Option</h1>
+        <h2>
+            Option is libary used to reduce null checking.
+        </h2>
+        <h1 class="expressive">Constructors</h1>
+        <h2 class="code fit">
+            <span class="key1">Option</span><<span class="key3">T</span>> <span class="key3">T</span> value => <span class="key3">Option</span>
+            <br>
+            <span class="key1">Some</span> <span class="key3">T</span> value => <span class="key3">Option</span>
+            <br>
+            <span class="key1">None</span><<span class="key3">T</span>> => <span class="key3">Option</span>
+        </h2>
+        <h2 class="expressive">Functions</h2>
+        <h2 class="code fit">
+            <span class="key1">is_none</span> => <span class="key3">bool</span><br>
+            <span class="key1">is_some</span> => <span class="key3">bool</span><br>
+            <span class="key1">value_or</span> <span class="key3">T</span> other_value => <span class="key3">T</span><br>
+            <span class="key1">to_string</span> => <span class="key3">string</span>
+        </h2>
+        <h1 class="expressive">Examples</h1>
+        <h2 class="code fit">
+            <span class="key1">fn</span> get_optional_value <span class="key3">int</span> num => <span class="key3">Option</span><<span class="key3">int</span>>
+            <br>&ensp; <span class="key1">return</span> num % 2 == 0 ? <span class="key1">Some</span>(num) : <span class="key1">None</span><<span class="key3">int</span>>()
+            <br>;
+            <br><br>
+            <span class="key1">let</span> a_opt = <span class="key1">get_optional_value</span>(1) <span class="key0">//return None</span><br>
+            <span class="key1">let</span> b_opt = <span class="key1">get_optional_value</span>(2) <span class="key0">//return Some(2)</span><br>
+            <br>
+            <span class="key1">select</span> a <span class="key2">from</span> a_opt <span class="key2">do</span> <span class="key1">print</span>(a) <span class="key0">//will not print cause it's None</span>
+            <br>
+            <span class="key1">select</span> b <span class="key2">from</span> b_opt <span class="key2">do</span> <span class="key1">print</span>(b) <span class="key0">//prints "2"</span>
+            <br><br>
+            <span class="key1">if</span> a_opt.<span class="key1">is_none</span>() <span class="key2">do</span> <span class="key1">print</span>("has nothing") <span class="key0">//prints "has nothing"</span>
+            <br>
+            <span class="key1">if</span> b_opt.<span class="key1">is_some</span>() <span class="key2">do</span> <span class="key1">print</span>("has something") <span class="key0">//prints "has something"</span>
+            <br><br>
+            <span class="key1">print</span>(a_opt.<span class="key1">value_or</span>(0)) <span class="key0">//prints "0"</span>
+            <br>
+            <span class="key1">print</span>(b_opt.<span class="key1">value_or</span>(0)) <span class="key0">//prints "2"</span>
+            <br><br>
+            <span class="key1">print</span>(a_opt.<span class="key1">to_string</span>()) <span class="key0">//prints "None"</span>
+            <br>
+            <span class="key1">print</span>(b_opt.<span class="key1">to_string</span>()) <span class="key0">//prints "Some(2)"</span>
+        </h2>
+    </div>
+</body>
+
+</html>

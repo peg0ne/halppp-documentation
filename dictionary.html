@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>H++ Documentation | Dictionary</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="img/favicon.png">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
+        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
+        <div class="nav-element-root">
+            <h1 class="nav-item nav-element">Blog</h1>
+            <h1 class="nav-item nav-element" onclick="window.location.href='documentation.html'">Documentation</h1>
+            <h1 class="nav-item nav-element">Features</h1>
+            <h1 class="nav-item nav-element">Download</h1>
+        </div>
+    </div>
+    <div class="main-view">
+        <h1 class="expressive">Dictionary</h1>
+        <h2>
+            Dictionary is class with key value pairs
+        </h2>
+        <h1 class="expressive">Constructors</h1>
+        <h2 class="code fit">
+            <span class="key1">Dictionary</span><<span class="key3">T</span>, <span class="key3">U</span>> => <span class="key3">Dictionary</span><<span class="key3">T</span>, <span class="key3">U</span>>
+        </h2>
+        <h2 class="expressive">Functions</h2>
+        <h2 class="code fit">
+            <span class="key1">keys</span> => <span class="key3">vector</span><<span class="key3">T</span>><br>
+            <span class="key1">contains</span> <span class="key3">T</span> key => <span class="key3">bool</span><br>
+            <span class="key1">add</span> <span class="key3">T</span> key, <span class="key3">U</span> value => <span class="key3">void</span><br>
+            <span class="key1">try_get_value</span> <span class="key3">T</span> key => <span class="key3">Option</span><<span class="key3">U</span>><br>
+        </h2>
+        <h1 class="expressive">Examples</h1>
+        <h2 class="code fit">
+            <span class="key1">let</span> dict = <span class="key2">Dictionary</span><<span>string</span>, <span>int</span>>() <span class="key0">//initialize dictionary</span><br>
+            <br>
+            dict.<span class="key1">add</span>("one", 1) <span class="key0">//adds key value pair "one" -> 1</span><br>
+            dict.<span class="key1">add</span>("two", 2) <span class="key0">//adds key value pair "two" -> 2</span><br>
+            <span class="key1">let</span> hasOne = dict.<span class="key1">contains</span>("one") <span class="key0">//will return true since key "one" exists</span><br>
+            <span class="key1">let</span> hasThree = dict.<span class="key1">contains</span>("three") <span class="key0">//will return false since key "theee" doesn't exists</span><br>
+            <br>
+            <span class="key0">//tries to get the value from the dictionary with key "one"</span><br>
+            <span class="key1">select</span> one_as_int <span class="key2">from</span> dict.<span class="key1">try_get_value</span>("one")<br>
+            &emsp; <span class="key1">print</span>(one_as_int) <span class="key0">//will print "1" as value to key "one" is 1 </span><br>
+            ;
+        </h2>
+    </div>
+</body>
+
+</html>

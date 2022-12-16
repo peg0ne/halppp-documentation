@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>H++ Documentation | Clap</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="img/favicon.png">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
+        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
+        <div class="nav-element-root">
+            <h1 class="nav-item nav-element">Blog</h1>
+            <h1 class="nav-item nav-element" onclick="window.location.href='documentation.html'">Documentation</h1>
+            <h1 class="nav-item nav-element">Features</h1>
+            <h1 class="nav-item nav-element">Download</h1>
+        </div>
+    </div>
+    <div class="main-view">
+        <h1 class="expressive">C.L.A.P</h1>
+        <h2>
+            Command Line Argument Parser
+            <br> helper libary to parse arguments better.
+        </h2>
+        <h1 class="expressive">Constructors</h1>
+        <h2 class="code fit">
+            <span class="key1">Clap</span> <span class="key3">int</span> argc, <span class="key3">char</span> <span class="key2">**</span>argv => <span class="key3">Clap</span>
+        </h2>
+        <h2 class="expressive">Functions</h2>
+        <h2 class="code fit">
+            <span class="key1">has</span> <span class="key3">string</span> check => <span class="key3">bool</span>
+            <br>
+            <span class="key1">peek</span> <span class="key3">string</span> check => <span class="key3">Option</span><<span class="key3">string</span>>
+        </h2>
+        <h1 class="expressive">Examples</h1>
+        <h2 class="code fit">
+            <span class="key2">let</span> argc = 2 <br>
+            <span class="key2">let</span> argv = ["-location", "some location, "-flag"] <br>
+            <span class="key2">let</span> clap = <span class="key1">Clap</span>(argc, argv)
+            <br><br>
+            <span class="key2">let</span> has_location = clap.<span class="key1">has</span>("-flag")
+            <br>
+            <span class="key1">select</span> location <span class="key2">from</span> clap.<span class="key1">peek</span>("-location")
+            <br>
+            &emsp; <span class="key1">print</span>(location)
+            <br>
+            ;
+        </h2>
+    </div>
+</body>
+
+</html>

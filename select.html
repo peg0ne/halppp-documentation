@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>H++ Documentation | Select</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="img/favicon.png">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
+        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
+        <div class="nav-element-root">
+            <h1 class="nav-item nav-element">Blog</h1>
+            <h1 class="nav-item nav-element" onclick="window.location.href='documentation.html'">Documentation</h1>
+            <h1 class="nav-item nav-element">Features</h1>
+            <h1 class="nav-item nav-element">Download</h1>
+        </div>
+    </div>
+    <div class="main-view">
+        <h1 class="expressive">Select</h1>
+        <h2>
+            select is a way to easily use optional values
+            <br> in a way that's more intuitive.
+        </h2>
+        <h2 class="code fit">
+            select (<span class="bold">object</span>) from (<span class="bold">optional object</span>)
+            <br><br>
+            <span class="key1">select</span> obj <span class="key2">from</span> optional_object
+            <br> &emsp; <span class="key2">let</span> as_str = <span class="key1">$</span>"{<span class="key2">obj</span>}"<br>;
+        </h2>
+        
+        <h2 class="expressive">Example</h2>
+        <h2>Using Select:</h2>
+        <h2 class="code fit">
+            <span class="key1">select</span> obj <span class="key2">from</span> optional_object <span class="key2">doremi</span> obj
+        </h2>
+        <h2>Using basic syntax:</h2>
+        <h2 class="code fit">
+            <span class="key1">if</span> optional_object.is_some() <span class="key2">doremi</span> optional_object.value_or(0)
+        </h2>
+    </div>
+</body>
+
+</html>
