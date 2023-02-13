@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Files</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Files</h1>
+            <h2>Library to work with system calls</h2>
+            <h2 class="expressive">Functions</h2>
+            <h2 class="code fit">
+                <span class="key1">read</span>
+                <span class="key3">string</span> path =>
+                <span class="key3">Option</span><<span class="key3">string</span
+                >>
+                <br />
+                <span class="key1">readlines</span>
+                <span class="key3">string</span> path =>
+                <span class="key3">vector</span><<span class="key3">string</span
+                >>
+                <br />
+                <span class="key1">write</span>
+                <span class="key3">string</span> content,
+                <span class="key3">string</span> path =>
+                <br />
+                <span class="key1">system</span>
+                <span class="key3">string</span> command =>
+                <span class="key3">bool</span>
+                <br />
+                <span class="key1">makedir</span>
+                <span class="key3">string</span> name =>
+                <span class="key3">bool</span>
+                <br />
+                <span class="key1">changedir</span>
+                <span class="key3">string</span> name =>
+                <span class="key3">bool</span>
+                <br />
+                <span class="key1">env</span>
+                <span class="key3">string</span> env_var =>
+                <span class="key3">Option</span><<span class="key3">string</span
+                >>
+                <br />
+                <span class="key1">list_reg_files</span>
+                <span class="key3">string</span> path =>
+                <span class="key3">vector</span><<span class="key3">string</span
+                >>
+                <br />
+                <span class="key1">list_dirs</span>
+                <span class="key3">string</span> path =>
+                <span class="key3">vector</span><<span class="key3">string</span
+                >>
+                <br />
+                <span class="key1">list_files</span>
+                <span class="key3">string</span> path =>
+                <span class="key3">vector</span><<span class="key3">string</span
+                >>
+                <br />
+                <span class="key1">remove</span>
+                <span class="key3">string</span> path =>
+            </h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                <span class="key2">let</span> textOpt =
+                <span class="key1">read</span>(<span class="key2"
+                    >"somefile.txt"</span
+                >) <br />
+                <span class="key2">let</span> lines =
+                <span class="key1">readlines</span>(<span class="key2"
+                    >"somefile.txt"</span
+                >) <br />
+                <br />
+                <span class="key2">select</span> text
+                <span class="key2">from</span> textOpt
+                <span class="key2">do</span>
+                <span class="key1">println</span>(text)
+                <br />
+                <span class="key2">foreach</span> line
+                <span class="key2">in</span> lines
+                <br />
+                &emsp; <span class="key1">println</span>(line)
+                <br />
+                ;
+                <br />
+                <br />
+                <span class="key2">if</span> textOpt.<span class="key1"
+                    >is_none</span
+                >() <span class="key2">do</span>
+                <span class="key1">write</span>(<span class="key2">"hello"</span
+                >") <br />
+                <span class="key1">system</span>(<span class="key2"
+                    >"cat somefile.txt"</span
+                >) <br />
+                <span class="key1">makedir</span>(<span class="key2"
+                    >"new_folder"</span
+                >) <br />
+                <span class="key1">changedir</span>(<span class="key2"
+                    >"new_folder"</span
+                >) <br />
+                <span class="key2">let</span> files =
+                <span class="key1">list_files</span>(<span class="key2"
+                    >"."</span
+                >) <br />
+                <span class="key2">foreach</span> file
+                <span class="key2">in</span> files
+                <br />
+                &emsp; <span class="key1">println</span>(file)
+                <br />
+                ;
+                <br />
+                <br />
+                <span class="key1">changedir</span>(<span class="key2"
+                    >".."</span
+                >) <br />
+                <span class="key1">remove</span>(<span class="key2"
+                    >"new_folder"</span
+                >) <br />
+            </h2>
+        </div>
+    </body>
+</html>

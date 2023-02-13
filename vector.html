@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Vector</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Vector</h1>
+            <h2>Vector is struct used for working with 3d vectors.</h2>
+            <h1 class="expressive">Constructors</h1>
+            <h2 class="code fit">
+                <span class="key1">Vector</span> =>
+                <span class="key3">Vector</span>
+                <br />
+                <span class="key1">Vector</span>
+                <span class="key3">int</span> x,
+                <span class="key1">Vector</span>
+                <span class="key3">int</span> y =>
+                <span class="key3">Vector</span>
+                <br />
+                <span class="key1">Vector</span>
+                <span class="key3">int</span> x,
+                <span class="key1">Vector</span>
+                <span class="key3">int</span> y,
+                <span class="key1">Vector</span>
+                <span class="key3">int</span> z =>
+                <span class="key3">Vector</span>
+            </h2>
+            <h2 class="expressive">Functions</h2>
+            <h2 class="code fit">
+                <span class="key1">add</span>
+                <span class="key3">Vector</span> other =>
+                <br />
+                <span class="key1">sub</span>
+                <span class="key3">Vector</span> other =>
+                <br />
+                <span class="key1">eq</span>
+                <span class="key3">Vector</span> other =>
+                <span class="key3">bool</span><br />
+                <span class="key1">multiply</span>
+                <span class="key3">int</span> amount =>
+            </h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                <span class="key2">let</span> v_one =
+                <span class="key1">Vector</span>(0,0,0)
+                <br />
+                <span class="key2">let</span> v_two =
+                <span class="key1">Vector</span>(1,1,1)
+                <br />
+                v_one.<span class="key1">add</span>(v_two)
+                <br />
+                v_one.<span class="key1">multiply</span>(<span class="key3"
+                    >10</span
+                >)
+                <br />
+                <span class="key2">if</span> !v_one.<span class="key1">eq</span
+                >(v_two) <span class="key2">do</span> v_one.<span class="key1"
+                    >sub</span
+                >(v_two)
+            </h2>
+        </div>
+    </body>
+</html>
