@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Loops</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Loops</h1>
+            <h2>for/foreach/while/loop</h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                <span class="key0">// prints 0-9</span>
+                <br />
+                <span class="key2">for</span> i <span class="key2">until</span>
+                <span class="key3">10</span>
+                <br />
+                &emsp; <span class="key1">println</span>(i)
+                <br />
+                ;
+                <br />
+                <span class="key0">// or</span>
+                <br />
+                <span class="key2">for</span> i
+                <span class="key2">until</span>
+                <span class="key3">10</span>
+                <span class="key2">do</span>
+                <span class="key1">println</span>(i)
+                <br />
+                <br />
+                <span class="key0">// prints "hello world!"</span>
+                <br />
+                <span class="key3">vector</span><<span class="key3">string</span
+                >> lines = {<span class="key2">"hello "</span>,
+                <span class="key2">"world"</span>,
+                <span class="key2">"!"</span>}
+                <br />
+                <span class="key2">foreach</span> i, line
+                <span class="key2">in</span> lines
+                <br />
+                &emsp; <span class="key1">print</span>(lines)
+                <br />
+                ;
+                <br />
+                <span class="key0">// prints "0-2"</span>
+                <br />
+                <span class="key2">foreach</span> i, line
+                <span class="key2">in</span> lines <span class="key2">do</span>
+                <span class="key1">println</span>(i)
+                <br />
+                <br />
+                <span class="key0">// prints 0-9</span>
+                <br />
+                <span class="key2">let</span> i = 0
+                <br />
+                <span class="key2">while</span> i < <span class="key3">10</span>
+                <br />
+                &emsp; <span class="key1">println</span>(i++)
+                <br />
+                ;
+                <br />
+                <span class="key0">// prints 0-9</span>
+                <br />
+                <br />
+                <span class="key2">let</span> i = 0
+                <br />
+                <span class="key2">loop</span>
+                <br />
+                &emsp; <span class="key1">println</span>(i++)
+                <br />
+                &emsp; <span class="key2">if</span> i < 10
+                <span class="key2">do</span> <span class="key1">break</span>
+                <br />
+                ;
+            </h2>
+        </div>
+    </body>
+</html>
