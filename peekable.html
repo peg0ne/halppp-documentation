@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>H++ Documentation | Peekable</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="img/favicon.png">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
+        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
+        <div class="nav-element-root">
+            <a class="nav-item nav-element">Blog</a>
+            <a class="nav-item nav-element" href="documentation.html">Documentation</a>
+            <a class="nav-item nav-element">Features</a>
+            <a class="nav-item nav-element" href="download.html">Download</a>
+        </div>
+    </div>
+    <div class="main-view">
+        <h1 class="expressive">Peekable</h1>
+        <h2>
+            Peekable is an object used to make a list like object<br>
+            it can be used to traverse tokens and such in a compiler
+        </h2>
+        <h1 class="expressive">Constructors</h1>
+        <h2 class="code fit">
+            <span class="key1">Peekable</span><<span class="key3">T</span>> <span class="key3">vector</span><<span class="key3">T</span>> value => <span class="key3">Peekable</span><<span class="key3">T</span>>
+            <br>
+            <span class="key1">Peekable</span><<span class="key3">char</span>> <span class="key3">string</span> value => <span class="key3">Peekable</span><<span class="key3">char</span>>
+            <br>
+            <span class="key1">Peekable</span><<span class="key3">T</span>> => <span class="key3">Peekable</span><<span class="key3">T</span>>
+        </h2>
+        <h2 class="expressive">Functions</h2>
+        <h2 class="code fit">
+            <span class="key1">index</span> => <span class="key3">int</span><br>
+            <span class="key1">size</span> => <span class="key3">int</span><br>
+            <span class="key1">is_end</span> => <span class="key3">bool</span><br>
+            <span class="key1">is_begin</span> => <span class="key3">bool</span><br>
+            <span class="key1">at</span> <span class="key3">int</span> at => <span class="key3">Option</span><<span class="key3">T</span>><br>
+            <span class="key1">prev</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
+            <span class="key1">prev_peek</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
+            <span class="key1">next</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
+            <span class="key1">peek</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
+        </h2>
+        <h1 class="expressive">Examples</h1>
+        <h2 class="code fit">
+            <span class="key1">let</span> peekable_str = <span class="key1">Peekable</span>("<span class="key2">Test</span>") <span class="key0">//return None</span><br>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "T"</span>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "e"</span>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">peek_prev</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "T"</span>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">peek</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "s"</span>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "s"</span>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "T"</span>
+            <br>
+            <span class="key0">//will not print anything since there's no more chars</span>
+            <br>
+            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c)
+        </h2>
+    </div>
+</body>
+
+</html>
