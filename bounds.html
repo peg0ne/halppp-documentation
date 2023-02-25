@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Bounds</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Bounds</h1>
+            <h2>Bounds is struct used for working with rectangles.</h2>
+            <h1 class="expressive">Constructors</h1>
+            <h2 class="code fit">
+                <span class="key1">Bounds</span> =>
+                <span class="key3">Bounds</span>
+                <br />
+                <span class="key1">Bounds</span>
+                <span class="key3">int</span> maxX,
+                <span class="key3">int</span> minY,
+                <span class="key3">int</span> maxX,
+                <span class="key3">int</span> maxY =>
+                <span class="key3">Bounds</span>
+                <br />
+            </h2>
+            <h2 class="expressive">Functions</h2>
+            <h2 class="code fit">
+                <span class="key1">width</span> => <span class="key3">int</span>
+                <br />
+                <span class="key1">height</span> =>
+                <span class="key3">int</span>
+                <br />
+            </h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                <span class="key2">let</span> rect =
+                <span class="key1">Bounds</span>(0,0,10,10)
+                <br />
+                <span class="key2">let</span> width = rect.<span class="key1"
+                    >width</span
+                >()
+                <br />
+                <span class="key2">let</span> height = rect.<span class="key1"
+                    >height</span
+                >()
+                <br />
+                <span class="key3">Vector</span> min = rect.min
+                <br />
+                <span class="key3">Vector</span> max = rect.max
+            </h2>
+        </div>
+    </body>
+</html>
