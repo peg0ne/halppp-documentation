@@ -42,116 +42,60 @@
             <h2>Library to work with system calls</h2>
             <h2 class="expressive">Functions</h2>
             <h2 class="code fit">
-                <span class="key1">read</span>
-                <span class="key3">string</span> path =>
-                <span class="key3">Option</span><<span class="key3">string</span
-                >>
+                read string path => Option<<span>string</span>>
                 <br />
-                <span class="key1">readlines</span>
-                <span class="key3">string</span> path =>
-                <span class="key3">vector</span><<span class="key3">string</span
-                >>
+                readlines string path => vector<<span>string</span>>
                 <br />
-                <span class="key1">write</span>
-                <span class="key3">string</span> content,
-                <span class="key3">string</span> path =>
+                write string content, string path =>
                 <br />
-                <span class="key1">system</span>
-                <span class="key3">string</span> command =>
-                <span class="key3">bool</span>
+                system string command => bool
                 <br />
-                <span class="key1">system_output</span>
-                <span class="key3">string</span> command =>
-                <span class="key3">vector</span><<span class="key3">string</span>>
+                system_output string command => vector<<span>string</span>>
                 <br />
-                <span class="key1">makedir</span>
-                <span class="key3">string</span> name =>
-                <span class="key3">bool</span>
+                makedir string name => bool
                 <br />
-                <span class="key1">changedir</span>
-                <span class="key3">string</span> name =>
-                <span class="key3">bool</span>
+                changedir string name => bool
                 <br />
-                <span class="key1">env</span>
-                <span class="key3">string</span> env_var =>
-                <span class="key3">Option</span><<span class="key3">string</span
-                >>
+                env string env_var => Option<<span>string</span>>
                 <br />
-                <span class="key1">list_reg_files</span>
-                <span class="key3">string</span> path =>
-                <span class="key3">vector</span><<span class="key3">string</span
-                >>
+                list_reg_files string path => vector<<span>string</span>>
                 <br />
-                <span class="key1">list_dirs</span>
-                <span class="key3">string</span> path =>
-                <span class="key3">vector</span><<span class="key3">string</span
-                >>
+                list_dirs string path => vector<<span>string</span>>
                 <br />
-                <span class="key1">list_files</span>
-                <span class="key3">string</span> path =>
-                <span class="key3">vector</span><<span class="key3">string</span
-                >>
+                list_files string path => vector<<span>string</span>>
                 <br />
-                <span class="key1">remove</span>
-                <span class="key3">string</span> path =>
+                remove string path =>
             </h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key2">let</span> textOpt =
-                <span class="key1">read</span>(<span class="key2"
-                    >"somefile.txt"</span
-                >) <br />
-                <span class="key2">let</span> lines =
-                <span class="key1">readlines</span>(<span class="key2"
-                    >"somefile.txt"</span
-                >) <br />
+                let textOpt = read("somefile.txt") <br />
+                let lines = readlines("somefile.txt") <br />
                 <br />
-                <span class="key2">select</span> text
-                <span class="key2">from</span> textOpt
-                <span class="key2">do</span>
-                <span class="key1">println</span>(text)
+                select text from textOpt do println(text)
                 <br />
-                <span class="key2">foreach</span> line
-                <span class="key2">in</span> lines
+                foreach line in lines
                 <br />
-                &emsp; <span class="key1">println</span>(line)
+                &emsp; println(line)
                 <br />
                 ;
                 <br />
                 <br />
-                <span class="key2">if</span> textOpt.<span class="key1"
-                    >is_none</span
-                >() <span class="key2">do</span>
-                <span class="key1">write</span>(<span class="key2">"hello"</span
-                >") <br />
-                <span class="key1">system</span>(<span class="key2"
-                    >"cat somefile.txt"</span
-                >) <br />
-                <span class="key1">makedir</span>(<span class="key2"
-                    >"new_folder"</span
-                >) <br />
-                <span class="key1">changedir</span>(<span class="key2"
-                    >"new_folder"</span
-                >) <br />
-                <span class="key2">let</span> files =
-                <span class="key1">list_files</span>(<span class="key2"
-                    >"."</span
-                >) <br />
-                <span class="key2">foreach</span> file
-                <span class="key2">in</span> files
+                if textOpt.is_none() do write("hello") <br />
+                system("cat somefile.txt") <br />
+                makedir("new_folder") <br />
+                changedir("new_folder") <br />
+                let files = list_files(".") <br />
+                foreach file in files
                 <br />
-                &emsp; <span class="key1">println</span>(file)
+                &emsp; println(file)
                 <br />
                 ;
                 <br />
                 <br />
-                <span class="key1">changedir</span>(<span class="key2"
-                    >".."</span
-                >) <br />
-                <span class="key1">remove</span>(<span class="key2"
-                    >"new_folder"</span
-                >) <br />
+                changedir("..") <br />
+                remove("new_folder") <br />
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

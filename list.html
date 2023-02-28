@@ -42,86 +42,72 @@
             <h2>List is class similar to vector in c++ but i like this also</h2>
             <h1 class="expressive">Constructors</h1>
             <h2 class="code fit">
-                <span class="key1">List</span><<span class="key3">T</span>> =>
-                <span class="key3">List</span><<span class="key3">T</span>>
+                List<<span>T</span>> =>
+                List<<span>T</span>>
                 <br />
-                <span class="key1">List</span><<span class="key3">T</span>>
-                vector<<span class="key3">T</span>> value =>
-                <span class="key3">List</span><<span class="key3">T</span>>
+                List<<span>T</span>>
+                vector<<span>T</span>> value =>
+                List<<span>T</span>>
             </h2>
             <h2 class="expressive">Functions</h2>
             <h2 class="code fit">
-                <span class="key1">at</span> <span class="key3">int</span> at =>
-                <span class="key3">T</span><br />
-                <span class="key1">at_ptr</span>
-                <span class="key3">int</span> at => <span class="key3">T*</span
-                ><br />
-                <span class="key1">set</span> <span class="key3">int</span> at,
-                <span class="key3">T</span> new_value =>
-                <span class="key3">void</span><br />
-                <span class="key1">first</span> =>
-                <span class="key3">Option</span><<span class="key3">T</span
-                >><br />
-                <span class="key1">last</span> =>
-                <span class="key3">Option</span><<span class="key3">T</span
-                >><br />
-                <span class="key1">begin</span> =>
-                <span class="key3">iterator</span><<span class="key3">T</span
-                >><br />
-                <span class="key1">end</span> =>
-                <span class="key3">iterator</span><<span class="key3">T</span
-                >><br />
-                <span class="key1">len</span> => <span class="key3">int</span
-                ><br />
-                <span class="key1">size</span> => <span class="key3">int</span
-                ><br />
-                <span class="key1">add</span>
-                <span class="key3">T</span> new_value =>
-                <span class="key3">void</span><br />
-                <span class="key1">pop</span> => <span class="key3">void</span
-                ><br />
-                <span class="key1">clear</span> => <span class="key3">void</span
-                ><br />
-                <span class="key1">as_vec_ptr</span> =>
-                <span class="key3">vector</span><<span class="key3">T</span
-                >>*<br />
-                <span class="key1">insert</span>
-                <span class="key3">int</span> at,
-                <span class="key3">T</span> new_value =>
-                <span class="key3">void</span><br />
-                <span class="key1">remove</span>
-                <span class="key3">int</span> at =>
-                <span class="key3">void</span><br />
+                at int at =>
+                T<br />
+                at_ptr
+                int at => T*<br />
+                set int at,
+                T new_value =>
+                void<br />
+                first =>
+                Option<<span>T</span>><br />
+                last =>
+                Option<<span>T</span>><br />
+                begin =>
+                iterator<<span>T</span>><br />
+                end =>
+                iterator<<span>T</span>><br />
+                len => int<br />
+                size => int<br />
+                add
+                T new_value =>
+                void<br />
+                pop => void<br />
+                clear => void<br />
+                as_vec_ptr =>
+                vector<<span>T</span>>*<br />
+                insert
+                int at,
+                T new_value =>
+                void<br />
+                remove
+                int at =>
+                void<br />
             </h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key1">let</span> list =
-                <span class="key2">List</span><<span class="key3">string</span
-                >>({"<span class="key2">world</span>", " ", "<span class="key2"
-                    >hello</span
-                >"}) <span class="key0">//initialize list</span><br />
+                let list =
+                List<string>({"world", " ", "hello"}) //initialize list<br />
                 <br />
-                <span class="key1">foreach</span> s
-                <span class="key2">in</span> list <span class="key2">do</span>
-                <span class="key1">print</span>(s)
-                <span class="key0">//will print "world hello"</span>
+                foreach s
+                in list do
+                print(s)
+                //will print "world hello"
                 <br />
                 <br />
-                list.<span class="key1">remove</span>(0)
-                <span class="key0">//removes "world"</span><br />
-                list.<span class="key1">remove</span>(0)
-                <span class="key0">//removes " "</span><br />
-                list.<span class="key1">add</span>(0)
-                <span class="key0">//adds "world at the end"</span><br />
-                list.<span class="key1">insert</span>(1)
-                <span class="key0"
-                    >//inserts " " in between "hello" & "world"</span
-                ><br />
-                <span class="key1">foreach</span> s
-                <span class="key2">in</span> list <span class="key2">do</span>
-                <span class="key1">print</span>(s)
-                <span class="key0">//will print "hello world"</span>
+                list.remove(0)
+                //removes "world"<br />
+                list.remove(0)
+                //removes " "<br />
+                list.add(0)
+                //adds "world at the end"<br />
+                list.insert(1)
+                //inserts " " in between "hello" & "world"<br />
+                foreach s
+                in list do
+                print(s)
+                //will print "hello world"
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

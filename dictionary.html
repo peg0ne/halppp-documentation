@@ -36,32 +36,33 @@
         </h2>
         <h1 class="expressive">Constructors</h1>
         <h2 class="code fit">
-            <span class="key1">KeyValuePair</span> <span class="key3">T</span> key, <span class="key3">U</span> value => <span class="key3">KeyValuePair</span><<span class="key3">T</span>, <span class="key3">U</span>>
+            KeyValuePair T key, U value => KeyValuePair<<span>T, U</span>>
             <br>
-            <span class="key1">Dictionary</span><<span class="key3">T</span>, <span class="key3">U</span>> => <span class="key3">Dictionary</span><<span class="key3">T</span>, <span class="key3">U</span>>
+            Dictionary<<span>T, U</span>> => Dictionary<<span>T, U</span>>
         </h2>
         <h2 class="expressive">Functions</h2>
         <h2 class="code fit">
-            <span class="key1">keys</span> => <span class="key3">vector</span><<span class="key3">T</span>><br>
-            <span class="key1">contains</span> <span class="key3">T</span> key => <span class="key3">bool</span><br>
-            <span class="key1">add</span> <span class="key3">T</span> key, <span class="key3">U</span> value => <span class="key3">void</span><br>
-            <span class="key1">try_get_value</span> <span class="key3">T</span> key => <span class="key3">Option</span><<span class="key3">U</span>><br>
+            keys => vector<<span>T</span>><br>
+            contains T key => bool<br>
+            add T key, U value => void<br>
+            try_get_value T key => Option<<span>U</span></U>><br>
         </h2>
         <h1 class="expressive">Examples</h1>
         <h2 class="code fit">
-            <span class="key1">let</span> dict = <span class="key2">Dictionary</span><<span>string</span>, <span>int</span>>() <span class="key0">//initialize dictionary</span><br>
+            let dict = Dictionary<<span>string</span>, <span>int</span>>() //initialize dictionary<br>
             <br>
-            dict.<span class="key1">add</span>("one", 1) <span class="key0">//adds key value pair "one" -> 1</span><br>
-            dict.<span class="key1">add</span>("two", 2) <span class="key0">//adds key value pair "two" -> 2</span><br>
-            <span class="key1">let</span> hasOne = dict.<span class="key1">contains</span>("one") <span class="key0">//will return true since key "one" exists</span><br>
-            <span class="key1">let</span> hasThree = dict.<span class="key1">contains</span>("three") <span class="key0">//will return false since key "theee" doesn't exists</span><br>
+            dict.add("one", 1) //adds key value pair "one" -> 1<br>
+            dict.add("two", 2) //adds key value pair "two" -> 2<br>
+            let hasOne = dict.contains("one") //will return true since key "one" exists<br>
+            let hasThree = dict.contains("three") //will return false since key "theee" doesn't exists<br>
             <br>
-            <span class="key0">//tries to get the value from the dictionary with key "one"</span><br>
-            <span class="key1">select</span> one_as_int <span class="key2">from</span> dict.<span class="key1">try_get_value</span>("one")<br>
-            &emsp; <span class="key1">print</span>(one_as_int) <span class="key0">//will print "1" as value to key "one" is 1 </span><br>
+            //tries to get the value from the dictionary with key "one"<br>
+            select one_as_int from dict.try_get_value("one")<br>
+            &emsp; print(one_as_int) //will print "1" as value to key "one" is 1 <br>
             ;
         </h2>
     </div>
 </body>
+<script src="main.js"></script>
 
 </html>

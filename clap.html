@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <head>
+        <title>H++ Documentation | Clap</title>
 
-<head>
+        <meta charset="UTF-8" />
 
-    <title>H++ Documentation | Clap</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <meta charset="UTF-8" />
+        <meta name="description" content="" />
 
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <meta name="description" content="" />
+        <link rel="icon" href="img/favicon.png" />
+    </head>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <link rel="icon" href="img/favicon.png">
-
-</head>
-
-<body>
-    <div class="nav-bar">
-        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
-        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
-        <div class="nav-element-root">
-            <a class="nav-item nav-element">Blog</a>
-            <a class="nav-item nav-element" href="documentation.html">Documentation</a>
-            <a class="nav-item nav-element">Features</a>
-            <a class="nav-item nav-element" href="download.html">Download</a>
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
         </div>
-    </div>
-    <div class="main-view">
-        <h1 class="expressive">C.L.A.P</h1>
-        <h2>
-            Command Line Argument Parser
-            <br> helper libary to parse arguments better.
-        </h2>
-        <h1 class="expressive">Constructors</h1>
-        <h2 class="code fit">
-            <span class="key1">Clap</span> <span class="key3">int</span> argc, <span class="key3">char</span> <span class="key2">**</span>argv => <span class="key3">Clap</span>
-        </h2>
-        <h2 class="expressive">Functions</h2>
-        <h2 class="code fit">
-            <span class="key1">has</span> <span class="key3">string</span> check => <span class="key3">bool</span>
-            <br>
-            <span class="key1">peek</span> <span class="key3">string</span> check => <span class="key3">Option</span><<span class="key3">string</span>>
-        </h2>
-        <h1 class="expressive">Examples</h1>
-        <h2 class="code fit">
-            <span class="key2">let</span> argc = 2 <br>
-            <span class="key2">let</span> argv = ["-location", "some location, "-flag"] <br>
-            <span class="key2">let</span> clap = <span class="key1">Clap</span>(argc, argv)
-            <br><br>
-            <span class="key2">let</span> has_location = clap.<span class="key1">has</span>("-flag")
-            <br>
-            <span class="key1">select</span> location <span class="key2">from</span> clap.<span class="key1">peek</span>("-location")
-            <br>
-            &emsp; <span class="key1">print</span>(location)
-            <br>
-            ;
-        </h2>
-    </div>
-</body>
-
+        <div class="main-view">
+            <h1 class="expressive">C.L.A.P</h1>
+            <h2>
+                Command Line Argument Parser
+                <br />
+                helper libary to parse arguments better.
+            </h2>
+            <h1 class="expressive">Constructors</h1>
+            <h2 class="code fit">Clap int argc, char **argv => Clap</h2>
+            <h2 class="expressive">Functions</h2>
+            <h2 class="code fit">
+                has string check => bool
+                <br />
+                peek string check => Option<<span>string</span>>
+            </h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                let argc = 2 <br />
+                let argv = ["-location", "some location", "-flag"] <br />
+                let clap = Clap(argc, argv)
+                <br /><br />
+                let has_location = clap.has("-flag")
+                <br />
+                select location from clap.peek("-location")
+                <br />
+                &emsp; print(location)
+                <br />
+                ;
+            </h2>
+        </div>
+    </body>
+    <script src="main.js"></script>
 </html>

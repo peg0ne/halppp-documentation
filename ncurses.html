@@ -44,117 +44,53 @@
             </h2>
             <h1 class="expressive">Constructors</h1>
             <h2 class="code fit">
-                <span class="key1">Ncurses</span>
-                <span class="key3">bool</span> ignore_colors =
-                <span class="key2">false</span> =>
+                Ncurses bool ignore_colors = false =>
                 <br />
             </h2>
             <h2 class="expressive">Functions</h2>
             <h2 class="code fit">
-                <span class="key1">move_curs </span
-                ><span class="key3">int</span> y,
-                <span class="key3">int</span> x =><br />
-                <span class="key1">mark_until </span
-                ><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">short</span> color,
-                <span class="key3">bool</span> is_bold =
-                <span class="key2">false</span>,
-                <span class="key3">bool</span> is_dim =
-                <span class="key2">false</span> =><br />
-                <span class="key1">mark </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">short</span> color =><br />
-                <span class="key1">box </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x =><br />
-                <span class="key1">box </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">int</span> h,
-                <span class="key3">int</span> w,
-                <span class="key3">bool</span> invis =
-                <span class="key2">false</span> =><br />
-                <span class="key1">invis_box </span
-                ><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">int</span> h, <span class="key3">int</span> w
-                =><br />
-                <span class="key1">use_arrows</span> =><br />
-                <span class="key1">col</span>
-                <span class="key3">short</span> col,
-                <span class="key3">bool</span> on_off =
-                <span class="key2">false</span> =><br />
-                <span class="key1">clear</span> <span class="key3">int</span> y,
-                <span class="key3">int</span> len =><br />
-                <span class="key1">clearScr</span> =><br />
-                <span class="key1">clearLn</span>
-                <span class="key3">int</span> y =><br />
-                <span class="key1">add </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">char</span> c =><br />
-                <span class="key1">add </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">string</span> s =><br />
-                <span class="key1">add </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">int</span> value =><br />
-                <span class="key1">add </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">short</span> value =><br />
-                <span class="key1">add </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">float</span> value =><br />
-                <span class="key1">add </span><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">double</span> value =><br />
-                <span class="key1">add_until </span
-                ><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">string</span> s,
-                <span class="key3">int</span> limit,
-                <span class="key3">bool</span> is_bold =><br />
-                <span class="key1">v_line </span
-                ><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">int</span> len =><br />
-                <span class="key1">h_line </span
-                ><span class="key3">int</span> y,
-                <span class="key3">int</span> x,
-                <span class="key3">int</span> len =><br />
-                <span class="key1">key</span> => <span class="key3">auto</span
-                ><br />
-                <span class="key1">stop</span> =><br />
-                <span class="key1">start</span>
-                <span class="key3">bool</span> is_bold =
-                <span class="key2">false</span> =><br />
-                <span class="key1">init_pair_adv</span>
-                <span class="key3">short</span> pair,
-                <span class="key3">short</span> fg_p,
-                <span class="key3">Vector</span> fg,
-                <span class="key3">short</span> bg_p,
-                <span class="key3">Vector</span> bg =><br />
+                move_curs int y, int x =><br />
+                mark_until int y, int x, short color, bool is_bold = false, bool
+                is_dim = false =><br />
+                mark int y, int x, short color =><br />
+                box int y, int x =><br />
+                box int y, int x, int h, int w, bool invis = false =><br />
+                invis_box int y, int x, int h, int w =><br />
+                use_arrows =><br />
+                col short col, bool on_off = false =><br />
+                clear int y, int len =><br />
+                clearScr =><br />
+                clearLn int y =><br />
+                add int y, int x, char c =><br />
+                add int y, int x, string s =><br />
+                add int y, int x, int value =><br />
+                add int y, int x, short value =><br />
+                add int y, int x, float value =><br />
+                add int y, int x, double value =><br />
+                add_until int y, int x, string s, int limit, bool is_bold =><br />
+                v_line int y, int x, int len =><br />
+                h_line int y, int x, int len =><br />
+                key => auto<br />
+                stop =><br />
+                start bool is_bold = false =><br />
+                init_pair_adv short pair, short fg_p, Vector fg, short bg_p,
+                Vector bg =><br />
             </h2>
             <h1 class="expressive">Example</h1>
             <h2 class="code fit">
-                <span class="key1">fn</span> main =><br />
-                &emsp; <span class="key2">let</span> n =
-                <span class="key1">Ncurses</span>() <br />
-                &emsp; <span class="key1">loop</span> <br />
-                &emsp;&emsp;&emsp; n.<span class="key1">clearScr</span>() <br />
-                &emsp;&emsp;&emsp; <span class="key2">let</span> key = n.<span
-                    class="key1"
-                    >key</span
-                >()
+                fn main =><br />
+                &emsp; let n = Ncurses() <br />
+                &emsp; loop <br />
+                &emsp;&emsp;&emsp; n.clearScr() <br />
+                &emsp;&emsp;&emsp; let key = n.key()
                 <br />
-                &emsp;&emsp;&emsp; <span class="key1">if</span> key ==
-                <span class="key3">'q'</span> <span class="key2">do</span>
-                <span class="key1">break</span><br />
-                &emsp;&emsp;&emsp; n.<span class="key1">add</span>(0,0,
-                <span class="key1">$</span>"<span class="key2">KEYPRESS:</span>
-                {key}")<br />
+                &emsp;&emsp;&emsp; if key == 'q' do break<br />
+                &emsp;&emsp;&emsp; n.add(0,0, $"KEYPRESS: {key}")<br />
                 &emsp; ;<br />
-                &emsp; n.<span class="key1">stop</span>() <br />
+                &emsp; n.stop() <br />
                 ;
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

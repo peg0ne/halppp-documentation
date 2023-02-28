@@ -42,69 +42,58 @@
             <h2>for/foreach/while/loop</h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key0">// prints 0-9</span>
+                // prints 0-9
                 <br />
-                <span class="key2">for</span> i <span class="key2">until</span>
-                <span class="key3">10</span>
+                for i until 10
                 <br />
-                &emsp; <span class="key1">println</span>(i)
-                <br />
-                ;
-                <br />
-                <span class="key0">// or</span>
-                <br />
-                <span class="key2">for</span> i
-                <span class="key2">until</span>
-                <span class="key3">10</span>
-                <span class="key2">do</span>
-                <span class="key1">println</span>(i)
-                <br />
-                <br />
-                <span class="key0">// prints "hello world!"</span>
-                <br />
-                <span class="key3">vector</span><<span class="key3">string</span
-                >> lines = {<span class="key2">"hello "</span>,
-                <span class="key2">"world"</span>,
-                <span class="key2">"!"</span>}
-                <br />
-                <span class="key2">foreach</span> i, line
-                <span class="key2">in</span> lines
-                <br />
-                &emsp; <span class="key1">print</span>(lines)
+                &emsp; println(i)
                 <br />
                 ;
                 <br />
-                <span class="key0">// prints "0-2"</span>
+                // or
                 <br />
-                <span class="key2">foreach</span> i, line
-                <span class="key2">in</span> lines <span class="key2">do</span>
-                <span class="key1">println</span>(i)
+                for i until 10 do println(i)
                 <br />
                 <br />
-                <span class="key0">// prints 0-9</span>
+                // prints "hello world!"
                 <br />
-                <span class="key2">let</span> i = 0
+                vector<<span>string</span>> lines = {"hello ", "world", "!"}
                 <br />
-                <span class="key2">while</span> i < <span class="key3">10</span>
+                foreach i, line in lines
                 <br />
-                &emsp; <span class="key1">println</span>(i++)
+                &emsp; print(lines)
                 <br />
                 ;
                 <br />
-                <span class="key0">// prints 0-9</span>
+                // prints "0-2"
+                <br />
+                foreach i, line in lines do println(i)
                 <br />
                 <br />
-                <span class="key2">let</span> i = 0
+                // prints 0-9
                 <br />
-                <span class="key2">loop</span>
+                let i = 0
                 <br />
-                &emsp; <span class="key1">println</span>(i++)
+                while i < 10
                 <br />
-                &emsp; <span class="key2">if</span> i < 10
-                <span class="key2">do</span> <span class="key1">break</span>
+                &emsp; println(i++)
+                <br />
+                ;
+                <br />
+                <br />
+                // prints 0-9
+                <br />
+                let i = 0
+                <br />
+                loop
+                <br />
+                &emsp; println(i++)
+                <br />
+                &emsp; if i < 10 do break
                 <br />
                 ;
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

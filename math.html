@@ -42,37 +42,25 @@
             <h2>Library to work with some helpers for numbers</h2>
             <h2 class="expressive">Functions</h2>
             <h2 class="code fit">
-                <span class="key1">clamp</span>
-                <span class="key3">double</span> value,
-                <span class="key3">double</span> min,
-                <span class="key3">double</span> max =>
-                <span class="key3">double</span>
+                clamp double value, double min, double max => double
                 <br />
-                <span class="key1">max</span>
-                <span class="key3">double</span> v_one,
-                <span class="key3">double</span> v_two =>
-                <span class="key3">double</span>
+                max double v_one, double v_two => double
                 <br />
-                <span class="key1">min</span>
-                <span class="key3">double</span> v_one,
-                <span class="key3">double</span> v_two =>
-                <span class="key3">double</span>
+                min double v_one, double v_two => double
                 <br />
             </h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key2">let</span> v = <span class="key3">100</span>
+                let v = 100
                 <br />
-                <span class="key2">v</span> = <span class="key2">clamp</span>(v,
-                <span class="key3">0</span>, <span class="key3">5</span>)
+                v = clamp(v, 0, 5)
                 <br />
-                <span class="key2">v</span> = <span class="key2">max</span>(v,
-                <span class="key3">10</span>)
+                v = max(v, 10)
                 <br />
-                <span class="key2">v</span> = <span class="key2">min</span>(v,
-                <span class="key3">1</span>)
+                v = min(v, 1)
                 <br />
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

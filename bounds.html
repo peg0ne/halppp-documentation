@@ -42,42 +42,31 @@
             <h2>Bounds is struct used for working with rectangles.</h2>
             <h1 class="expressive">Constructors</h1>
             <h2 class="code fit">
-                <span class="key1">Bounds</span> =>
-                <span class="key3">Bounds</span>
+                Bounds => Bounds
                 <br />
-                <span class="key1">Bounds</span>
-                <span class="key3">int</span> maxX,
-                <span class="key3">int</span> minY,
-                <span class="key3">int</span> maxX,
-                <span class="key3">int</span> maxY =>
-                <span class="key3">Bounds</span>
+                Bounds int maxX, int minY, int maxX, int maxY => Bounds
                 <br />
             </h2>
             <h2 class="expressive">Functions</h2>
             <h2 class="code fit">
-                <span class="key1">width</span> => <span class="key3">int</span>
+                width => int
                 <br />
-                <span class="key1">height</span> =>
-                <span class="key3">int</span>
+                height => int
                 <br />
             </h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key2">let</span> rect =
-                <span class="key1">Bounds</span>(0,0,10,10)
+                let rect = Bounds(0,0,10,10)
                 <br />
-                <span class="key2">let</span> width = rect.<span class="key1"
-                    >width</span
-                >()
+                let width = rect.width()
                 <br />
-                <span class="key2">let</span> height = rect.<span class="key1"
-                    >height</span
-                >()
+                let height = rect.height()
                 <br />
-                <span class="key3">Vector</span> min = rect.min
+                Vector min = rect.min
                 <br />
-                <span class="key3">Vector</span> max = rect.max
+                Vector max = rect.max
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

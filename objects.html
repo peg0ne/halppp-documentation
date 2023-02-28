@@ -42,39 +42,48 @@
             <h2>struct/class/enum</h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-            <span class="key1">struct</span> <span class="key3">StructName</span><br>
-            <span class="key1">struct</span> <span class="key3">StructName</span><<span class="key4">T</span>><br>
-            <span class="key1">struct</span> <span class="key3">StructName</span><<span class="key4">T, U, V</span>> => <span class="key3">InheritName</span><br>
-            <br>
-            <span class="key1">class</span> <span class="key3">ClassName</span><br>
-            <span class="key1">class</span> <span class="key3">ClassName</span><<span class="key4">T</span>><br>
-            <span class="key1">class</span> <span class="key3">ClassName</span><<span class="key4">T, U, V)</span>> => <span class="key3">InheritName</span><br>
-            <br>
-            <span class="key1">enum</span> <span class="key3">EnumName</span>
-            <br>
-            &emsp; EnumValue,<br>
-            &emsp; EnumValue,<br>
-            &emsp; EnumValue,<br>
-            ;
-            <br>
-            <br>
-            <span class="key0">// Classes/structs can contain functions, and variables </span><br>
-            <span class="key1">class</span> <span class="key3">ClassName</span><br>
-            &emsp; <span class="key3">EnumName</span> variable_name_enum = <span class="key3">EnumName</span>::<span class="key3">EnumValue</span> <br>
-            &emsp; <span class="key3">int</span> variable_name_int = 0<br>
-            &emsp; <span class="key3">string</span>* variable_name_string<br>
-            &emsp; <span class="key3">vector</span><<span class="key3">double</span>> variable_name_arr = {}<br>
-            &emsp; <span class="key3">ClassName</span> <span class="key2"> constructor args..</span> => <br>
-            &emsp; ;<br>
-            <span class="key0">// in classes default property privacy is set to private,<br>// pub sets the below to public</span><br>
-            pub 
-            <br>
-            &emsp; <span class="key3">fn</span> get_array => <span class="key3">vector</span><<span class="key3">double</span>> <br>
-            &emsp;&emsp;&emsp; <span class="key3">return</span> variable_name_arr<br>
-            &emsp; ;<br>
-            &emsp; <span class="key3">fn</span> get_int => <span class="key3">int</span> <span class="key2">doremi</span> variable_name_int <br>
-            ;
+                struct StructName<br />
+                struct StructName<<span>T><br />
+                struct StructName<<span>T, U, V> => InheritName<br />
+                <br />
+                class ClassName<br />
+                class ClassName<<span>T><br />
+                class ClassName<<span>T, U, V> => InheritName<br />
+                <br />
+                enum EnumName
+                <br />
+                &emsp; EnumValue,<br />
+                &emsp; EnumValue,<br />
+                &emsp; EnumValue,<br />
+                ;
+                <br />
+                <br />
+                // Classes/structs can contain functions, and variables<br />
+                class ClassName<br />
+                &emsp; EnumName variable_name_enum =
+                EnumName::EnumValue
+                <br />
+                &emsp; int variable_name_int = 0<br />
+                &emsp; string* variable_name_string<br />
+                &emsp; vector<<span>double</span>> variable_name_arr = {}<br />
+                &emsp; ClassName constructor args.. => <br />
+                &emsp; ;<br />
+                // in classes default property privacy is set to private,<br />
+                // pub sets the below to public
+                <br />
+                pub
+                <br />
+                &emsp; fn get_array =>
+                vector<double> <br />
+                &emsp;&emsp;&emsp;
+                return variable_name_arr<br />
+                &emsp; ;<br />
+                &emsp; fn get_int =>
+                int
+                doremi variable_name_int <br />
+                ;
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>
