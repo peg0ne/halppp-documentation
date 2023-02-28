@@ -3,12 +3,14 @@
     --color-1: #a34545;
     --color-2: #a39b43;
     --color-3: #43a1a3;
+    --color-4: #a38545;
 }
 
 .key0 {color: var(--color-0);}
 .key1 {color: var(--color-1);}
 .key2 {color: var(--color-2);}
 .key3 {color: var(--color-3);}
+.key4 {color: var(--color-4);}
 
 .code {
     width: fit-content;

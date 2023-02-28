@@ -42,53 +42,34 @@
             <h2>Vector is struct used for working with 3d vectors.</h2>
             <h1 class="expressive">Constructors</h1>
             <h2 class="code fit">
-                <span class="key1">Vector</span> =>
-                <span class="key3">Vector</span>
+                Vector => Vector
                 <br />
-                <span class="key1">Vector</span>
-                <span class="key3">int</span> x, <span class="key3">int</span> y
-                =>
-                <span class="key3">Vector</span>
+                Vector int x, int y => Vector
                 <br />
-                <span class="key1">Vector</span>
-                <span class="key3">int</span> x,
-                <span class="key3">int</span> y, <span class="key3">int</span> z
-                =>
-                <span class="key3">Vector</span>
+                Vector int x, int y, int z => Vector
             </h2>
             <h2 class="expressive">Functions</h2>
             <h2 class="code fit">
-                <span class="key1">add</span>
-                <span class="key3">Vector</span> other =>
+                add Vector other =>
                 <br />
-                <span class="key1">sub</span>
-                <span class="key3">Vector</span> other =>
+                sub Vector other =>
                 <br />
-                <span class="key1">eq</span>
-                <span class="key3">Vector</span> other =>
-                <span class="key3">bool</span><br />
-                <span class="key1">multiply</span>
-                <span class="key3">int</span> amount =>
+                eq Vector other => bool<br />
+                multiply int amount =>
             </h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key2">let</span> v_one =
-                <span class="key1">Vector</span>(0,0,0)
+                let v_one = Vector(0,0,0)
                 <br />
-                <span class="key2">let</span> v_two =
-                <span class="key1">Vector</span>(1,1,1)
+                let v_two = Vector(1,1,1)
                 <br />
-                v_one.<span class="key1">add</span>(v_two)
+                v_one.add(v_two)
                 <br />
-                v_one.<span class="key1">multiply</span>(<span class="key3"
-                    >10</span
-                >)
+                v_one.multiply(10)
                 <br />
-                <span class="key2">if</span> !v_one.<span class="key1">eq</span
-                >(v_two) <span class="key2">do</span> v_one.<span class="key1"
-                    >sub</span
-                >(v_two)
+                if !v_one.eq(v_two) do v_one.sub(v_two)
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>

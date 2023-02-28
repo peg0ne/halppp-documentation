@@ -37,45 +37,45 @@
         </h2>
         <h1 class="expressive">Constructors</h1>
         <h2 class="code fit">
-            <span class="key1">Peekable</span><<span class="key3">T</span>> <span class="key3">vector</span><<span class="key3">T</span>> value => <span class="key3">Peekable</span><<span class="key3">T</span>>
+            Peekable<<span>T</span>> vector<<span>T</span>> value => Peekable<<span>T</span>>
             <br>
-            <span class="key1">Peekable</span><<span class="key3">char</span>> <span class="key3">string</span> value => <span class="key3">Peekable</span><<span class="key3">char</span>>
+            Peekable<char> string value => Peekable<char>
             <br>
-            <span class="key1">Peekable</span><<span class="key3">T</span>> => <span class="key3">Peekable</span><<span class="key3">T</span>>
+            Peekable<<span>T</span>> => Peekable<<span>T</span>>
         </h2>
         <h2 class="expressive">Functions</h2>
         <h2 class="code fit">
-            <span class="key1">index</span> => <span class="key3">int</span><br>
-            <span class="key1">size</span> => <span class="key3">int</span><br>
-            <span class="key1">is_end</span> => <span class="key3">bool</span><br>
-            <span class="key1">is_begin</span> => <span class="key3">bool</span><br>
-            <span class="key1">at</span> <span class="key3">int</span> at => <span class="key3">Option</span><<span class="key3">T</span>><br>
-            <span class="key1">prev</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
-            <span class="key1">prev_peek</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
-            <span class="key1">next</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
-            <span class="key1">peek</span> => <span class="key3">Option</span><<span class="key3">T</span>><br>
+            index => int<br>
+            size => int<br>
+            is_end => bool<br>
+            is_begin => bool<br>
+            at int at => Option<<span>T</span>><br>
+            prev => Option<<span>T</span>><br>
+            prev_peek => Option<<span>T</span>><br>
+            next => Option<<span>T</span>><br>
+            peek => Option<<span>T</span>><br>
         </h2>
         <h1 class="expressive">Examples</h1>
         <h2 class="code fit">
-            <span class="key1">let</span> peekable_str = <span class="key1">Peekable</span>("<span class="key2">Test</span>") <span class="key0">//return None</span><br>
+            let peekable_str = Peekable("Test") //return None<br>
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "T"</span>
+            select c from peekable_str.next() do print(c) //will print "T"
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "e"</span>
+            select c from peekable_str.next() do print(c) //will print "e"
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">peek_prev</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "T"</span>
+            select c from peekable_str.peek_prev() do print(c) //will print "T"
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">peek</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "s"</span>
+            select c from peekable_str.peek() do print(c) //will print "s"
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "s"</span>
+            select c from peekable_str.next() do print(c) //will print "s"
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c) <span class="key0">//will print "T"</span>
+            select c from peekable_str.next() do print(c) //will print "T"
             <br>
-            <span class="key0">//will not print anything since there's no more chars</span>
+            //will not print anything since there's no more chars
             <br>
-            <span class="key1">select</span> c <span class="key2">from</span> peekable_str.<span class="key1">next</span>() <span class="key2">do</span> <span class="key1">print</span>(c)
+            select c from peekable_str.next() do print(c)
         </h2>
     </div>
 </body>
-
+<script src="main.js"></script>
 </html>

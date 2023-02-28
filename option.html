@@ -36,45 +36,45 @@
         </h2>
         <h1 class="expressive">Constructors</h1>
         <h2 class="code fit">
-            <span class="key1">Option</span><<span class="key3">T</span>> <span class="key3">T</span> value => <span class="key3">Option</span>
+            Option<<span>T</span>> T value => Option
             <br>
-            <span class="key1">Some</span> <span class="key3">T</span> value => <span class="key3">Option</span>
+            Some T value => Option
             <br>
-            <span class="key1">None</span><<span class="key3">T</span>> => <span class="key3">Option</span>
+            None<<span>T</span>> => Option
         </h2>
         <h2 class="expressive">Functions</h2>
         <h2 class="code fit">
-            <span class="key1">is_none</span> => <span class="key3">bool</span><br>
-            <span class="key1">is_some</span> => <span class="key3">bool</span><br>
-            <span class="key1">value_or</span> <span class="key3">T</span> other_value => <span class="key3">T</span><br>
-            <span class="key1">to_string</span> => <span class="key3">string</span>
+            is_none => bool<br>
+            is_some => bool<br>
+            value_or T other_value => T<br>
+            to_string => string
         </h2>
         <h1 class="expressive">Examples</h1>
         <h2 class="code fit">
-            <span class="key1">fn</span> get_optional_value <span class="key3">int</span> num => <span class="key3">Option</span><<span class="key3">int</span>>
-            <br>&ensp; <span class="key1">return</span> num % 2 == 0 ? <span class="key1">Some</span>(num) : <span class="key1">None</span><<span class="key3">int</span>>()
+            fn get_optional_value int num => Option<int>
+            <br>&ensp; return num % 2 == 0 ? Some(num) : None<int>()
             <br>;
             <br><br>
-            <span class="key1">let</span> a_opt = <span class="key1">get_optional_value</span>(1) <span class="key0">//return None</span><br>
-            <span class="key1">let</span> b_opt = <span class="key1">get_optional_value</span>(2) <span class="key0">//return Some(2)</span><br>
+            let a_opt = get_optional_value(1) //return None<br>
+            let b_opt = get_optional_value(2) //return Some(2)<br>
             <br>
-            <span class="key1">select</span> a <span class="key2">from</span> a_opt <span class="key2">do</span> <span class="key1">print</span>(a) <span class="key0">//will not print cause it's None</span>
+            select a from a_opt do print(a) //will not print cause it's None
             <br>
-            <span class="key1">select</span> b <span class="key2">from</span> b_opt <span class="key2">do</span> <span class="key1">print</span>(b) <span class="key0">//prints "2"</span>
+            select b from b_opt do print(b) //prints "2"
             <br><br>
-            <span class="key1">if</span> a_opt.<span class="key1">is_none</span>() <span class="key2">do</span> <span class="key1">print</span>("has nothing") <span class="key0">//prints "has nothing"</span>
+            if a_opt.is_none() do print("has nothing") //prints "has nothing"
             <br>
-            <span class="key1">if</span> b_opt.<span class="key1">is_some</span>() <span class="key2">do</span> <span class="key1">print</span>("has something") <span class="key0">//prints "has something"</span>
+            if b_opt.is_some() do print("has something") //prints "has something"
             <br><br>
-            <span class="key1">print</span>(a_opt.<span class="key1">value_or</span>(0)) <span class="key0">//prints "0"</span>
+            print(a_opt.value_or(0)) //prints "0"
             <br>
-            <span class="key1">print</span>(b_opt.<span class="key1">value_or</span>(0)) <span class="key0">//prints "2"</span>
+            print(b_opt.value_or(0)) //prints "2"
             <br><br>
-            <span class="key1">print</span>(a_opt.<span class="key1">to_string</span>()) <span class="key0">//prints "None"</span>
+            print(a_opt.to_string()) //prints "None"
             <br>
-            <span class="key1">print</span>(b_opt.<span class="key1">to_string</span>()) <span class="key0">//prints "Some(2)"</span>
+            print(b_opt.to_string()) //prints "Some(2)"
         </h2>
     </div>
 </body>
-
+<script src="main.js"></script>
 </html>

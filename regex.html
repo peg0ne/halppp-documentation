@@ -42,35 +42,30 @@
             <h2>it's regex</h2>
             <h1 class="expressive">Functions</h1>
             <h2 class="code fit">
-                <span class="key1">re</span> <span class="key3">string</span> line, 
-                <span class="key3">regex</span> reg, 
-                <span class="key3">int</span> capture => <span class="key3">vector</span><<span class="key3">RegexMatch</span>>
+                re string line, regex reg, int capture =>
+                vector<<span>RegexMatch</span>>
                 <br />
-                <span class="key1">re</span> <span class="key3">string</span> line, 
-                <span class="key3">string</span> reg, 
-                <span class="key3">int</span> capture => <span class="key3">vector</span><<span class="key3">RegexMatch</span>>
+                re string line, string reg, int capture =>
+                vector<<span>RegexMatch</span>>
                 <br />
             </h2>
             <h1 class="expressive">Examples</h1>
             <h2 class="code fit">
-                <span class="key1">let</span> matches =
-                <span class="key1">re</span>("<span class="key2">Hello text world</span>", "<span class="key2">text</span>", <span class="key3">0</span>)
+                let matches = re("Hello text world", "text", 0)
                 <br />
-                <span class="key1">foreach</span> m
-                <span class="key2">in</span> matches <span class="key2">do</span>
-                <span class="key1">print</span>($"Pos: {m.position} Text: {m.match}") <br />
-                <span class="key0">//will print "Pos: 6 Text: text"</span>
+                foreach m in matches do print($"Pos: {m.position} Text:
+                {m.match}") <br />
+                //will print "Pos: 6 Text: text"
                 <br />
                 <br />
-                <span class="key0">//or with precompiled regex</span> <br />
-                <span class="key3">regex</span> reg("text") <br />
-                <span class="key1">let</span> matches =
-                <span class="key1">re</span>("<span class="key2">Hello text world</span>", reg, <span class="key3">0</span>) <br />
-                <span class="key1">foreach</span> m
-                <span class="key2">in</span> matches <span class="key2">do</span>
-                <span class="key1">print</span>($"Pos: {m.position} Text: {m.match}") <br />
-                <span class="key0">//will print "Pos: 6 Text: text"</span>
+                //or with precompiled regex <br />
+                regex reg("text") <br />
+                let matches = re("Hello text world", reg, 0) <br />
+                foreach m in matches do print($"Pos: {m.position} Text:
+                {m.match}") <br />
+                //will print "Pos: 6 Text: text"
             </h2>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>
