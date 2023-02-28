@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Conditional</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Conditional</h1>
+            <h2>if/elif/else/select/switch/while</h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+            if a == b do print("equals")<br>
+            elif a < b do print("less")<br>
+            else do print("more")<br>
+            <br>
+            select value from optional_value do print("found value in option")<br>
+            <br>
+            switch some_value<br>
+            case EnumType::Name<br>
+            &ensp;    print("hello")<br>
+            &ensp;    break<br>
+            case EnumType::OtherName dobr print("hello")<br>
+            default dobr print("default")<br>
+            ;<br><br>
+            while a == b do print("still eq")<br>
+            <br>
+            //standard Operators are == != < > <= >=<br>
+            if a == b do return<br>
+            if a != b do return<br>
+            if a < b do return<br>
+            if a > b do return<br>
+            if a <= b do return<br>
+            if a >= b do return<br>
+            <br>
+            <br>
+            //adv Operators are =&= =|= =!= =>= =<= <<< >>><br>
+            let a = 1<br><br>
+            //ALL EQUALS<br>
+            if a =&= 1 : 1 : 1 do return<br><br>
+            //ANY EQUALS<br>
+            if a =|= 3 : 4 : 1 do return<br><br>
+            //ALL NOT EQUALS<br>
+            if a =!= 2 : 3 : 4 do return<br><br>
+            //ALL EQUALS OR MORE<br>
+            if a =>= 1 : 3 : 4 do return<br><br>
+            //ALL EQUALS OR LESS<br>
+            if a =<= 1 : 0 : -1 do return<br><br>
+            //ALL LESS<br>
+            if a <<< 0 : -1 : -34 do return<br><br>
+            //ALL MORE<br>
+            if a >>> 3 : 34 : 4 do return<br><br>
+            </h2>
+        </div>
+    </body>
+</html>

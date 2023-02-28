@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Regex</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Regex</h1>
+            <h2>it's regex</h2>
+            <h1 class="expressive">Functions</h1>
+            <h2 class="code fit">
+                <span class="key1">re</span> <span class="key3">string</span> line, 
+                <span class="key3">regex</span> reg, 
+                <span class="key3">int</span> capture => <span class="key3">vector</span><<span class="key3">RegexMatch</span>>
+                <br />
+                <span class="key1">re</span> <span class="key3">string</span> line, 
+                <span class="key3">string</span> reg, 
+                <span class="key3">int</span> capture => <span class="key3">vector</span><<span class="key3">RegexMatch</span>>
+                <br />
+            </h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                <span class="key1">let</span> matches =
+                <span class="key1">re</span>("<span class="key2">Hello text world</span>", "<span class="key2">text</span>", <span class="key3">0</span>)
+                <br />
+                <span class="key1">foreach</span> m
+                <span class="key2">in</span> matches <span class="key2">do</span>
+                <span class="key1">print</span>($"Pos: {m.position} Text: {m.match}") <br />
+                <span class="key0">//will print "Pos: 6 Text: text"</span>
+                <br />
+                <br />
+                <span class="key0">//or with precompiled regex</span> <br />
+                <span class="key3">regex</span> reg("text") <br />
+                <span class="key1">let</span> matches =
+                <span class="key1">re</span>("<span class="key2">Hello text world</span>", reg, <span class="key3">0</span>) <br />
+                <span class="key1">foreach</span> m
+                <span class="key2">in</span> matches <span class="key2">do</span>
+                <span class="key1">print</span>($"Pos: {m.position} Text: {m.match}") <br />
+                <span class="key0">//will print "Pos: 6 Text: text"</span>
+            </h2>
+        </div>
+    </body>
+</html>
