@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Basic</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Basics</h1>
+            <h1 class="expressive">Examples</h1>
+            <h2>Hello world</h2>
+            <h2 class="code fit">
+                get => print <br><br>
+                fn main => <br>
+                &emsp; println("hello world!")<br>
+                ;<br><br>
+                //or<br><br>
+                fn main => do println("hello world!")
+            </h2>
+            <h2>Print int</h2>
+            <h2 class="code fit">
+                get => print<br><br>
+                fn main => <br>
+                &emsp; let num = 0.0<br>
+                &emsp; println(num)<br>
+                ;<br>
+            </h2>
+            <h2>Format strings</h2>
+            <h2 class="code fit">
+                get => print<br><br>
+                fn main => <br>
+                &emsp; let num = 0.0<br>
+                &emsp; println($"formatted text with {num}")<br>
+                ;<br>
+            </h2>
+            <h2>Using Options</h2>
+            <h2 class="code fit">
+                get => print, option<br><br>
+                fn main => <br>
+                &emsp; let opt = Some(0)<br>
+                &emsp; select value from opt do print(value) //prints zero<br>
+                &emsp; let opt = None<int>()<br>
+                &emsp; select value from opt do print(value) //doesn't print because it's none<br>
+                &emsp; print(opt.value_or(10)) //prints 10<br>
+                &emsp; if opt.is_none()) do print("none") //will print none<br>
+                ;<br>
+            </h2>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

@@ -28,6 +28,9 @@ const red = [
     { reg: /[^_]enum /g, out: "enum " },
     { reg: /return/g, out: "return" },
     { reg: /case /g, out: "case " },
+    { reg: /get /g, out: "get " },
+    { reg: /inc /g, out: "inc " },
+    { reg: /use /g, out: "use " },
     { reg: /(\w*)\(/g, out: "$1", ext: "(" },
     { reg: /(\-)(\d)/g, out: "$1", ext: "$2" },
 ];
