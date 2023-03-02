@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <head>
+        <title>H++</title>
 
-<head>
+        <meta charset="UTF-8" />
 
-  <title>H++</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <meta charset="UTF-8" />
+        <meta name="description" content="" />
 
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <meta name="description" content="" />
+        <link rel="icon" href="img/favicon.png" />
+    </head>
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
-
-  <link rel="icon" href="img/favicon.png">
-
-</head>
-
-<body>
-    <div class="nav-bar">
-        <h1 class="header-logo" onclick="window.location.href='index.html'">H⨧</h1>
-        <h1 class="nav-item header-name" onclick="window.location.href='index.html'">Halppp</h1>
-        <div class="nav-element-root">
-            <a class="nav-item nav-element">Blog</a>
-            <a class="nav-item nav-element" href="documentation.html">Documentation</a>
-            <a class="nav-item nav-element">Features</a>
-            <a class="nav-item nav-element" href="download.html">Download</a>
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
         </div>
-    </div>
-    <div class="main-view">
-        <h1 class="expressive">H⨧</h1>
-        <h2 class="less-expressive">Halppp is a pseudo language that transpiles to c++. The language was created with the intention of removing alot of unecessary characters.
-            <br><br>Other than a bunch of changes syntactically it's still c++.
-        </h2>
-        <h1 class="expressive">Why it exist?</h1>
-        <h2 class="less-expressive">Why Not.
-        </h2>
-        <div class="spacer"></div>
-        <h2 class="bullet-list">
-            <span class="bullet"> >> </span>
-            Halppp reduces the number of 
-            [<span class="bullet">{}</span>, 
-            <span class="bullet">()</span>,
-            <span class="bullet">;</span>] you use cutting down the number of annoying keypresses
-        </h2>
-        <h2 class="bullet-list">
-            <span class="bullet"> >> </span>
-            <span class="bullet">Option</span> class to avoid using nulls
-        </h2>
-        <h2 class="bullet-list">
-            <span class="bullet"> >> </span>
-            The keyword auto has been changed to <span class="bullet">let</span>
-        </h2>
-        <h2 class="bullet-list">
-            <span class="bullet"> >> </span>
-            inline conditional statements if a == b <span class="bullet">doremi</span> 0
-        </h2>
-    </div>
-</body>
-
+        <div class="main-view">
+            <h1 class="expressive">H⨧</h1>
+            <h2 class="less-expressive">
+                Halppp is a pseudo language that transpiles to c++. The language
+                was created with the intention of removing alot of unecessary
+                characters. <br /><br />Other than a bunch of changes
+                syntactically it's still c++.
+            </h2>
+            <h1 class="expressive">Why it exist?</h1>
+            <h2 class="less-expressive">Why Not.</h2>
+            <h2 class="bullet-list">
+                <span class="bullet"> >> </span>
+                Halppp reduces the number of [<span class="bullet">{}</span>,
+                <span class="bullet">()</span>, <span class="bullet">;</span>]
+                you use cutting down the number of annoying keypresses
+            </h2>
+            <h2 class="bullet-list">
+                <span class="bullet"> >> </span>
+                <span class="bullet">Option</span> class to avoid using nulls
+            </h2>
+            <h2 class="bullet-list">
+                <span class="bullet"> >> </span>
+                The keyword auto has been changed to
+                <span class="bullet">let</span>
+            </h2>
+            <h2 class="bullet-list">
+                <span class="bullet"> >> </span>
+                it's not indentation dependant like python
+            </h2>
+            <h2 class="bullet-list">
+                <span class="bullet"> >> </span>
+                a lot less unecessary tokens to look at when reading through
+                code
+            </h2>
+            <h2 class="expressive">How it looks</h2>
+            <h2 class="code fit">
+                1 &emsp;|&emsp;fn println<<span>T</span>> T s => do cout << s <<
+                "\n"<br />
+                2 &emsp;|&emsp;<br />
+                3 &emsp;|&emsp;struct Language<br />
+                4 &emsp;|&emsp;&emsp; string name <br />
+                5 &emsp;|&emsp;&emsp; double version <br />
+                6 &emsp;|&emsp;&emsp; Language string name =><br />
+                7 &emsp;|&emsp;&emsp;&emsp;&emsp; this->name = name<br />
+                8 &emsp;|&emsp;&emsp;&emsp;&emsp; this->version = version<br />
+                9 &emsp;|&emsp;&emsp; ;<br />
+                10 |&emsp;;<br />
+                11 |&emsp;<br />
+                12 |&emsp;fn main =><br />
+                13 |&emsp;&emsp; let lang = Language("halppp")<br />
+                14 |&emsp;&emsp; println($"Language:
+                {lang.name}-v-{lang.version}")<br />
+                15 |&emsp;;<br />
+            </h2>
+            <h2 class="expressive">What it compiles to</h2>
+            <h2 class="code fit">
+                1 &emsp;| &emsp;template <<span>typename T</span>><br />
+                2 &emsp;| &emsp;void println(T s) {<br />
+                3 &emsp;| &emsp;&emsp; cout << s << "\n"<br />
+                4 &emsp;| &emsp;}<br />
+                5 &emsp;|<br />
+                6 &emsp;| &emsp;struct Language { <br />
+                7 &emsp;| &emsp;&emsp; string name;<br />
+                8 &emsp;| &emsp;&emsp; double version;<br />
+                9 &emsp;| &emsp;&emsp; Language( string name, double version )
+                {<br />
+                10 | &emsp;&emsp;&emsp;&emsp; this->name = name;<br />
+                11 | &emsp;&emsp;&emsp;&emsp; this->version = version;<br />
+                12 | &emsp;&emsp; }<br />
+                13 | &emsp;}<br />
+                14 |<br />
+                15 | &emsp;int main( int argc, char* argv[] ) {<br />
+                16 | &emsp;&emsp; auto lang = Language("halppp", 0.1);<br />
+                17 | &emsp;&emsp; println("Language: " + to_string(lang.name)
+                <br />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; +
+                "-v-" + to_string(lang.version) + "");<br />
+                18 | &emsp;&emsp; return 0;<br />
+                19 | &emsp;}<br />
+            </h2>
+        </div>
+    </body>
+    <script src="main.js"></script>
 </html>

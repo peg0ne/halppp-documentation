@@ -1,5 +1,6 @@
 const green = [
     { reg: /let /g, out: "let " },
+    { reg: / this/g, out: " this" },
     { reg: /elif /g, out: "elif " },
     { reg: /if /g, out: "if " },
     { reg: /else/g, out: "else" },
