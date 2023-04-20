@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Lambda</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Lambda</h1>
+            <h2>lambda/anonymous functions</h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                let a = 10
+                <br>
+                // > : keyword for starting a lambda function<br>
+                // lambda_func_id : name of the lambda function<br>
+                // a : capture variable from local scope. Can be used to capture more like (a,b,c) <br>
+                // (int i) : function parameters<br>
+                > lamda_func_id a (int i) doremi a + i<br>
+                // Or muliline<br>
+                > lambda_func_id a (int i)<br>
+                &emsp; return a + i<br>
+                ;<br>
+                let b = lamda_func_id(10)
+                <br>
+                //prints 100
+                <br>
+                println(b)
+                <br>
+            </h2>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
