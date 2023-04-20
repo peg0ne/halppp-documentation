@@ -59,6 +59,7 @@ const yellow = [
     { reg: /pub[\s]/g, out: "pub " },
     { reg: / true/g, out: " true" },
     { reg: / false/g, out: " false" },
+    { reg: /\+/g, out: "+"},
 ];
 function yellow_format(value) {
     return `<span class="key4">${value}</span>`;
