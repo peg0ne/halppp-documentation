@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Match</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Match</h1>
+            <h2>
+                Match is similar to switch but can be used for other values than constants.
+            </h2>
+            <h2 class="code fit">
+                let a = "ZERO" <br>
+                match a <br>
+                &emsp; "ZERO" => do println(0) <br>
+                &emsp; "ONE" => do println(1) <br>
+                &emsp; _ => do println("Unkown") <br>
+                ;<br><br>
+                let b = match a <br>
+                &emsp; "ZERO" => do 0 //if "ZERO" b = 0 <br>
+                &emsp; "ONE" => do 1 //elif "ONE" b = 1 <br>
+                &emsp; _ => // else b = -1 <br>
+                &emsp;&emsp;&emsp; println("Unknown") <br>
+                &emsp;&emsp;&emsp; -1 <br>
+                &emsp; ;<br>
+                ;<br><br>
+                a = match b <br>
+                &emsp; 0 => do "ZERO" //if 0 a = "ZERO" <br>
+                &emsp; 1 => do "ONE" //elif 1 a = "ONE" <br>
+                &emsp; _ => // else a = "MINUS ONE" <br>
+                &emsp;&emsp;&emsp; println("Unknown") <br>
+                &emsp;&emsp;&emsp; "MINUS ONE" <br>
+                &emsp; ;<br>
+                ;<br><br>
+            </h2>
+
+            <h2 class="expressive">Example</h2>
+            <h2>Using Match:</h2>
+            <h2 class="code fit">
+                let b = match a <br>
+                &emsp; "a" => do 1 <br>
+                &emsp; "b" => do 2 <br>
+                &emsp; "c" => do 3 <br>
+                &emsp; "d" => do 4 <br>
+                &emsp; _ => do -1 <br>
+                ;<br>
+            </h2>
+            <h2>Using basic syntax:</h2>
+            <h2 class="code fit">
+                int b = 0 <br>
+                if a == "a" do b = 1 <br>
+                elif a == "b" do b = 2 <br>
+                elif a == "c" do b = 3 <br>
+                elif a == "d" do b = 4 <br>
+                else do b = -1 <br>
+            </h2>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

@@ -10,6 +10,7 @@ const green = [
     { reg: /foreach/g, out: "foreach" },
     { reg: /for/g, out: "for" },
     { reg: /select /g, out: "select " },
+    { reg: /match /g, out: "match " },
     { reg: / do /g, out: " do " },
     { reg: / dobr /g, out: " dobr " },
     { reg: / dore /g, out: " dore " },
