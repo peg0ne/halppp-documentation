@@ -65,6 +65,25 @@
                 &emsp;&emsp;&emsp; "MINUS ONE" <br>
                 &emsp; ;<br>
                 ;<br><br>
+                //you can also use operators to override the match operator <br>
+                match a<br>
+                &emsp;&emsp; > 0 => do println("more than zero")<br>
+                &emsp;&emsp; < 0 => do println("more than zero")<br>
+                &emsp;&emsp; != 0 => do println("not zero")<br>
+                &emsp;&emsp; ....<br>
+                &emsp;&emsp; 0 => do println("zero")<br>
+                ;<br><br>
+                //you can even use member expressions to override the operator<br>
+                let a_opt = Some(a)<br>
+                match a_opt<br>
+                &emsp;&emsp; .is_some() => do println("some")<br>
+                &emsp;&emsp; _ => do println("none")<br>
+                ;<br><br>
+                match &a_opt<br>
+                &emsp;&emsp; ->is_some() => do println("some")<br>
+                &emsp;&emsp; _ => do println("none")<br>
+                ;<br><br>
+                
             </h2>
 
             <h2 class="expressive">Example</h2>
