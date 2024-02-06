@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>H++ Documentation | Map</title>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <h1 class="header-logo" onclick="window.location.href='index.html'">
+                H⨧
+            </h1>
+            <h1
+                class="nav-item header-name"
+                onclick="window.location.href='index.html'"
+            >
+                Halppp
+            </h1>
+            <div class="nav-element-root">
+                <a class="nav-item nav-element">Blog</a>
+                <a class="nav-item nav-element" href="documentation.html"
+                    >Documentation</a
+                >
+                <a class="nav-item nav-element">Features</a>
+                <a class="nav-item nav-element" href="download.html"
+                    >Download</a
+                >
+            </div>
+        </div>
+        <div class="main-view">
+            <h1 class="expressive">Map</h1>
+            <h2>functional style map</h2>
+            <h1 class="expressive">Examples</h1>
+            <h2 class="code fit">
+                struct Int<br>
+                &emsp; int num<br>
+                &emsp; string num_name<br>
+                &emsp; Int int in_num =><br>
+                &emsp; &emsp; num = in_num<br>
+                &emsp; &emsp; num_name = $"{in_num}"<br>
+                &emsp; ;<br>
+                ;<br><br>
+                // collects a vector of numbers up to 100000<br>
+                let a = linq::range(100000).as_vec()<br>
+                <br>
+                let b = map<<span>string</span>>(a)<br>
+                &emsp; .where(x => x > 10)<br>
+                &emsp; .where(x => x < 1000)<br>
+                &emsp; .where(x => x % 2 == 0)<br>
+                &emsp; .select(x => Int(x))<br>
+                &emsp; .where(x => x.num_name[0] == '2')<br>
+                &emsp; .where(x => x.num % 3 == 0)<br>
+                &emsp; .select(x => x.num_name)<br>
+                <br>
+                //b now contains these numbers as strings<br>
+                //["24", "204", "210", "216", "222",<br>// "228", "234", "240", "246",<br>// "252", "258", "264", "270",<br>// "276", "282", "288", "294"]
+                <br>
+            </h2>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
